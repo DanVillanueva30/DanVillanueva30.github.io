@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__contenedor">
+            <div class="header__grid">
+                <div class="barra">
+                    <div class="barra__grid">
+                        <a href="index.html" class="logo">
+                            <img class="logo__img" src="assets/control-png.png" alt="Imagen Logo">
+                            <h3 class="logo__texto"><span class="logo__texto logo__texto--azul">Alura</span>Geek</h3>
+                        </a>
+
+                        <div class="buscador">
+                            <input class="buscador__input" type="text" name="buscador" id="buscador" placeholder="¿Qué deseas buscar?">
+                            <img class="buscador__img" src="assets/lupa-tablet.svg" alt="Imagen Lupa" >
+                        </div>
+                    </div>
+                </div> <!--.Barra-->
+
+                <div class="inicio-sesion">
+                    <a href="login.html" class="inicio-sesion__boton">Login</a>
+                </div>
+
+                <div class="buscador-mobile">
+                    <img class="buscador-mobile__img" src="assets/lupa-png.png" alt="Imagen Lupa">
+                </div>
+            </div><!--.Header Grid-->
+        </div><!--.Header contenedor-->
+    </header>
+
+    <div class="hero">
+        <div class="hero__contenedor">
+            <div class="hero__content">
+                <div class="hero__grid">
+                    <h2 class="hero__heading">Febrero Promocional</h2>
+                    <p class="hero__texto">Productos seleccionados con 33% de descuento</p>
+                    <a href="#" class="hero__btn">Ver consolas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="main__contenedor">
+            <section class="productos" >
+                <div class="productos__encabezado">
+                    <h3 class="productos__heading">Star Wars</h3>
+
+                    <a href="ver-todos.html" class="productos__link">Ver todo 
+                        <img class="productos__flecha" src="assets/flecha-icon.svg" alt="Icono Flecha">
+                    </a>
+                </div>
+
+                <div class="productos__grid" id="StarWars"></div><!--.Productos-Grid-->
+            </section><!--.Productos-->
+
+            <section class="productos" >
+                <div class="productos__encabezado">
+                    <h3 class="productos__heading">Consolas</h3>
+
+                    <a href="ver-todos.html" class="productos__link">Ver todo 
+                        <img class="productos__flecha" src="assets/flecha-icon.svg" alt="Icono Flecha">
+                    </a>
+                </div>
+
+                <div class="productos__grid" id="Consolas"></div><!--.Productos-Grid-->
+            </section><!--.Productos-->
+
+            <section class="productos" >
+                <div class="productos__encabezado">
+                    <h3 class="productos__heading">Diversos</h3>
+
+                    <a href="ver-todos.html" class="productos__link">Ver todo 
+                        <img class="productos__flecha" src="assets/flecha-icon.svg" alt="Icono Flecha">
+                    </a>
+                </div>
+
+                <div class="productos__grid" id="Diversos"></div><!--.Productos-Grid-->
+            </section><!--.Productos-->
+
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div class="footer__grid">
+                <a href="index.html" class="footer__logo">
+                    <img class="footer__logo__img" src="assets/control-png.png" alt="Imagen Logo">
+                    <h3 class="footer__logo__texto"><span class="logo__texto logo__texto--azul">Alura</span>Geek</h3>
+                </a>
+
+                <div class="sobre-nosotros">
+                    <nav class="nav">
+                        <a href="#" class="nav__link">Quienes somos</a>
+                        <a href="#" class="nav__link">Política de privacidad</a>
+                        <a href="#" class="nav__link">Programa de fidelidad</a>
+                        <a href="#" class="nav__link">Quiero ser financiado</a>
+                        <a href="#" class="nav__link">Anuncie aquí</a>
+                    </nav>
+                </div>
+
+                <div class="contacto">
+                    <h3 class="contacto__heading">Habla con nosotros</h3>
+                    <form class="form">
+                        <label for="nombre" class="form__label">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" class="form__input">
+                        <textarea class="form__textarea" name="form__textarea" id="form__textarea" placeholder="Escribe tu mensaje"></textarea>
+                        <button class="form__btn " type="submit">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div><!--.Contacto Grid-->
+
+            <p class="footer__derechos">Desarrollado por Daniel Villanueva 2023</p>
+        </div>
+    </footer>
+
+    <script type="module" src="controllers/client.controller.js"></script>
+</body>
+</html>
